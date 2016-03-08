@@ -31,17 +31,9 @@
     <include file="example.xml"/>
 -->
     <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+
     <package name="default" namespace="/" extends="struts-default">
-
-
-        <global-results>
-            <result name="error">/WEB-INF/jsp/error.jsp</result>
-        </global-results>
-
-        <global-exception-mappings>
-            <exception-mapping exception="java.lang.Exception" result="error"/>
-        </global-exception-mappings>
-
         <action name="hello">
             <result>
                /Hello.jsp
@@ -49,13 +41,39 @@
         </action>
     </package>
 
+    <package name="front" namespace="/front" extends="struts-default">
 
+
+        <action name="index">
+            <result name="success">
+                /Namespace.jsp
+            </result>
+        </action>
+
+        <action name="index1" class="com.struts2.front.action.IndexAction3">
+            <result name="success"></result>
+        </action>
+    </package>
+
+    <package name="path" extends="struts-default" namespace="/path">
+        <action name="path" class="com.struts2.path.action.PathAction">
+            <result name="path">
+                /path.jsp
+            </result>
+        </action>
+    </package>
+
+    <package name="user" extends="struts-default" namespace="/user">
+        <action name="userAdd" class="com.struts2.user.action.UserAction" method="add">
+            <result>/user_add_success.jsp</result>
+        </action>
+
+        <action name="user" class="com/struts2/user/action/UserAction">
+            <result>/user_add_success.jsp</result>
+        </action>
+    </package>
 
     <!-- Add packages here -->
-
-
-
-
 
 
 </struts>
