@@ -15,7 +15,7 @@
 <a href="/user/userAdd">添加用户（method）</a><br>
 <a href="/user/user!add">添加用户（DMI）</a><br>
 
-
+<a href="/user/user!add?name=a&id=100">添加用户（附参数）</a><br>
 
 <a href="/actions/Studentadd">添加学生</a><br>
 <a href="/actions/Studentdelete">删除学生</a><br>
@@ -24,5 +24,7 @@
 <a href="/actions/Teacher_delete">删除老师</a><br>
 <a href="/actions/Course_add">添加产品</a><br>
 <a href="/actions/Course_delete">删除商品</a><br>
+
+
 </body>
 </html>
