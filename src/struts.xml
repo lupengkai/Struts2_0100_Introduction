@@ -73,6 +73,20 @@
         </action>
     </package>
 
+
+    <package name="actions" extends="struts-default" namespace="/actions">
+        <action name="Student*" class="com.struts2.action.StudentAction" method="{1}">
+            <result>/Student{1}_success.jsp</result>
+        </action>
+
+        <action name="*_*" class="com.struts2.action.{1}Action" method="{2}">
+            <result>/{1}_{2}.jsp</result>
+        </action>
+    </package>
+
+
+<!--精确匹配优先，带型号的属于同一优先级，按顺序-->
+
     <!-- Add packages here -->
 
 
