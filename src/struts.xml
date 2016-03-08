@@ -68,7 +68,7 @@
             <result>/user_add_success.jsp</result>
         </action>
 
-        <action name="user" class="com/struts2/user/action/UserAction">
+        <action name="user" class="com.struts2.user.action.UserAction">
             <result>/user_add_success.jsp</result>
         </action>
     </package>

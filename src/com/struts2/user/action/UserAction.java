@@ -1,13 +1,15 @@
 package com.struts2.user.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import com.struts2.user.mode.User;
 
 /**
  * Created by tage on 3/8/16.
  */
-public class UserAction extends ActionSupport {
+public class UserAction extends ActionSupport implements ModelDriven<User> {
 
-    private String name;
+   /* private String name;
     private int id;
 
 
@@ -31,8 +33,28 @@ public class UserAction extends ActionSupport {
         System.out.println("Name = " + name);
         System.out.println("ID = " + id);
         return "success";
+    }*/
+
+   /* private User user;*/
+
+    private User user = new User();
+
+    public String add() {
+        System.out.println("Name = " + user.getName());
+        System.out.println("ID = " + user.getId());
+        return "success";
     }
 
+  /*  public User getUser() {
+        return user;
+    }
 
+    public void setUser(User user) {
+        this.user = user;
+    }*/
 
+    @Override
+    public User getModel() {
+        return user;
+    }
 }
