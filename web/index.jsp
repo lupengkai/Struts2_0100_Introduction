@@ -16,7 +16,9 @@
 <a href="/user/user!add">添加用户（DMI）</a><br>
 
 <a href="/user/user!add?name=a&id=100">添加用户（附参数/ModelDriven）</a><br>
+<a href="/user/user!add?name=鲁&id=100">添加用户（中文）</a><br>
 <a href="/user/user!add?user.name=a&user.id=8">添加用户（DominModel）</a><br>
+<a href="/user/user!add?name=hehe">添加用户（简单数据验证）</a><br>
 
 <a href="/actions/Studentadd">添加学生</a><br>
 <a href="/actions/Studentdelete">删除学生</a><br>

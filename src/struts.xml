@@ -32,6 +32,7 @@
 -->
     <constant name="struts.devMode" value="true" />
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.custom.i18n.resources" value="GBK"/>
 
     <package name="default" namespace="/" extends="struts-default">
         <action name="hello">
@@ -66,10 +67,12 @@
     <package name="user" extends="struts-default" namespace="/user">
         <action name="userAdd" class="com.struts2.user.action.UserAction" method="add">
             <result>/user_add_success.jsp</result>
+
         </action>
 
         <action name="user" class="com.struts2.user.action.UserAction">
             <result>/user_add_success.jsp</result>
+            <result name="error">/user_add_error.jsp</result>
         </action>
     </package>
 
