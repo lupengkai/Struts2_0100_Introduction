@@ -20,6 +20,20 @@
 <a href="/user/user!add?user.name=a&user.id=8">添加用户（DominModel）</a><br>
 <a href="/user/user!add?name=hehe">添加用户（简单数据验证）</a><br>
 
+<form name="f" action="" method="post">
+    用户名:<input type="text" name="name">
+    密码:<input type="text" name="password">
+    <br>
+    <input type="button" value="submit1" onclick="javascript:document.f.action='login/login1';document.f.submit();">
+    <input type="button" value="submit2" onclick="javascript:document.f.action='login/login2';document.f.submit();">
+    <input type="button" value="submit3" onclick="javascript:document.f.action='login/login3';document.f.submit();">
+    <input type="button" value="submit4" onclick="javascript:document.f.action='login/login4';document.f.submit();">
+</form>
+
+
+
+
+
 <a href="/actions/Studentadd">添加学生</a><br>
 <a href="/actions/Studentdelete">删除学生</a><br>
 
@@ -27,6 +41,8 @@
 <a href="/actions/Teacher_delete">删除老师</a><br>
 <a href="/actions/Course_add">添加产品</a><br>
 <a href="/actions/Course_delete">删除商品</a><br>
+
+
 
 
 </body>

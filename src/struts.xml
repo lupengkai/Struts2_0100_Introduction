@@ -87,6 +87,13 @@
         </action>
     </package>
 
+    <package name="login" extends="struts-default" namespace="/login">
+        <action name="login*" class="com.struts2.user.action.LoginAction{1}">
+            <result>/user_login_success.jsp</result>
+        </action>
+
+    </package>
+
 
 <!--精确匹配优先，带型号的属于同一优先级，按顺序-->
 
