@@ -37,7 +37,7 @@
     <package name="default" namespace="/" extends="struts-default">
         <default-action-ref name="index"></default-action-ref>
         <action name="index">
-            <result>/default.jsp</result>
+            <result>/default.jsp </result>
         </action>
         <action name="hello">
             <result>
@@ -97,6 +97,29 @@
             <result>/user_login_success.jsp</result>
         </action>
 
+    </package>
+
+
+    <package name="r" extends="struts-default" namespace="/r">
+        <action name="r1">
+            <result type="dispatcher">/r1.jsp</result>
+
+        </action>
+        <action name="r2">
+            <result type="redirect">/r2.jsp</result>
+        </action>
+        <action name="r3">
+            <result type="chain">
+                r1
+       <!--         <param name="actionName">r1</param>
+                <param name="namespace">/r</param>-->
+            </result>
+
+
+        </action>
+        <action name="r4">
+            <result type="redirectAction">r2</result>
+        </action>
     </package>
 
 
