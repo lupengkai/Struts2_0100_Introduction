@@ -56,9 +56,9 @@
             </result>
         </action>
 
-        <action name="index1" class="com.struts2.front.action.IndexAction3">
+        <!--<action name="index1" class="com.struts2.front.action.IndexAction3">
             <result name="success"></result>
-        </action>
+        </action>-->
     </package>
 
     <package name="path" extends="struts-default" namespace="/path">
@@ -70,6 +70,11 @@
     </package>
 
     <package name="user" extends="struts-default" namespace="/user">
+        <global-results>
+            <result name="mainpage">/main.jsp</result>
+        </global-results>
+
+
         <action name="userAdd" class="com.struts2.user.action.UserAction" method="add">
             <result>/user_add_success.jsp</result>
 
@@ -78,8 +83,15 @@
         <action name="user" class="com.struts2.user.action.UserAction">
             <result>/user_add_success.jsp</result>
             <result name="error">/user_add_error.jsp</result>
+            <result>${r}</result>
         </action>
     </package>
+
+  <!--  <package name="admin" extends="user" namespace="/admin">
+        <action name="admin" class="com.struts2.user.action.AdminAction ">
+
+        </action>
+    </package>-->
 
 
     <package name="actions" extends="struts-default" namespace="/actions">

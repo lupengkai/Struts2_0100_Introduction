@@ -1,19 +1,17 @@
 <%--
   Created by IntelliJ IDEA.
   User: tage
-  Date: 3/8/16
-  Time: 10:44 AM
+  Date: 3/10/16
+  Time: 7:36 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=GBK" language="java" pageEncoding="GBK" %>
-<%@taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
     <meta http-equiv="CONTENT-TYPE" content="text/html" ; charset="GBK">
     <title></title>
 </head>
 <body>
-<p1>用户添加成功</p1>
-<s:debug></s:debug>
+<p5>main</p5>
 </body>
 </html>

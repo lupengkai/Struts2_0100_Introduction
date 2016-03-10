@@ -58,20 +58,49 @@ public class UserAction extends ActionSupport /*implements ModelDriven<User> */{
         return user;
     }*/
 
-    private  String name;
+    private int type;
 
-    public String getName() {
-        return name;
+    public void setType(int type) {
+        this.type = type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getType() {
+        return type;
     }
-    public String add() {
-        if (name == null || !name.equals("admin")) {
-            this.addFieldError("name", "name is error");
+
+    private String r;
+    public String getR() {
+        return r;
+    }
+
+    public void setR(String r) {
+        this.r = r;
+    }
+/*
+    public String execute() {
+        if (type == 1) {
+            return SUCCESS;
+        } else if (type == 2) {
             return ERROR;
+        } else {
+            return "mainpage";
+        }
+
+
+
+    }
+*/
+
+    public String execute() throws Exception{
+        if (type == 1) {
+            r = "/user_add_success.jsp";
+
+        } else if (type == 2) {
+            r = "/user_add_error.jsp";
         }
         return SUCCESS;
     }
+
+
+
 }

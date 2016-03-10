@@ -30,6 +30,10 @@
     <input type="button" value="submit4" onclick="javascript:document.f.action='login/login4';document.f.submit();">
 </form>
 
+<form action="/user/user" method="get">
+    <input type="text" name="type">
+    <input type="submit" value="Ìá½»">
+</form>
 
 
 
