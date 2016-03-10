@@ -35,11 +35,16 @@
     <constant name="struts.custom.i18n.resources" value="GBK"/>
 
     <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index"></default-action-ref>
+        <action name="index">
+            <result>/default.jsp</result>
+        </action>
         <action name="hello">
             <result>
                /Hello.jsp
             </result>
         </action>
+
     </package>
 
     <package name="front" namespace="/front" extends="struts-default">
