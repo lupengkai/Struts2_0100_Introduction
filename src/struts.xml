@@ -81,9 +81,12 @@
         </action>
 
         <action name="user" class="com.struts2.user.action.UserAction">
-            <result>/user_add_success.jsp</result>
+           <!-- <result>/user_add_success.jsp</result>
             <result name="error">/user_add_error.jsp</result>
-            <result>${r}</result>
+            <result>${r}</result>-->
+            <result type="redirect">
+                /user_success.jsp?id=${type}
+            </result>
         </action>
     </package>
 
