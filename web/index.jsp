@@ -48,6 +48,14 @@
 
 
 
+<a href="/ognl/ognl?userName=a&password=123&user.age=8">OGNL Stack value</a>
+
+
+
+
+
+
+
 
 </body>
 </html>
