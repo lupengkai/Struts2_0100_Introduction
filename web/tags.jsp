@@ -46,7 +46,11 @@
     <li>%ÓÃ·¨
         <s:set var="incPage" value="'/_include1.html'"/>
         <s:include value="%{#incPage}"/>
+    </li>
 
+
+    <li>
+        <s:fielderror fieldName="fielderror.test" theme="simple"/>
     </li>
     <s:debug/>
 
