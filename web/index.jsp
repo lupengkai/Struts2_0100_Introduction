@@ -48,7 +48,14 @@
 
 
 
-<a href="/ognl/ognl?userName=a&password=123&user.age=8">OGNL Stack value</a>
+<a href="/ognl/ognl?userName=a&password=123&user.age=8">访问值栈中对象的普通属性（get, set方法）</a><br/>
+<a href="/ognl/ognl?userName=a&password=123&user.age=8&cat.friend.name=Bobby">访问值栈中对象的普通属性</a><br/>
+<a href="/ognl/ognl?userName=a&password=123">访问值栈中对象的普通方法</a><br/>
+<a href="/ognl/ognl?userName=a&password=123&user.age=8&cat.friend.name=Bobby">访问值栈中对象的普通方法</a><br/>
+<a href="/ognl/ognl?userName=a&password=123&user.age=8&cat.friend.name=Bobby">访问值栈中action的普通方法</a><br/>
+<a href="/ognl/ognl?userName=a&password=123&user.age=8&cat.friend.name=Bobby">访问静态方法，静态变量</a><br/>
+<a href="/ognl/test?userName=a&password=123&user.age=8&cat.friend.name=Bobby">两个Action</a><br/>
+<%--<a href="/ognl/ognl">构造方法</a><br/>--%>
 
 
 

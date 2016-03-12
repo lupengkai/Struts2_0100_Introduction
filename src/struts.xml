@@ -33,6 +33,7 @@
     <constant name="struts.devMode" value="true" />
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
     <constant name="struts.custom.i18n.resources" value="GBK"/>
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
 
     <package name="default" namespace="/" extends="struts-default">
         <default-action-ref name="index"></default-action-ref>
