@@ -58,6 +58,8 @@
 <%--<a href="/ognl/ognl">构造方法</a><br/>--%>
 
 
+<hr/>
+<a href="/tags/tags.action?username=u&password=p">tags</a><br/>
 
 
 

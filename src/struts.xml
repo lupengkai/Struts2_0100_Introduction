@@ -139,6 +139,7 @@
     </package>
 
     <include file="com/struts2/ognl/ognl.xml"> </include>
+    <include file="com/struts2/tags/tags.xml"> </include>
 
 
 <!--精确匹配优先，带型号的属于同一优先级，按顺序-->
