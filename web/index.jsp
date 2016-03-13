@@ -60,7 +60,7 @@
 
 <hr/>
 <a href="/tags/tags.action?username=u&password=p">tags</a><br/>
-
+<a href="/tags/tags.action?username=u&password=p&age=8&age=15">if elseif else</a><br/>
 
 
 

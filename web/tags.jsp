@@ -52,6 +52,62 @@
     <li>
         <s:fielderror fieldName="fielderror.test" theme="simple"/>
     </li>
+    <hr/>
+
+    <li>
+        if elseif else:
+        age[0] = <s:property value="#parameters.age[0]"/>
+        <br/>
+        age=<s:property value="#parameters.age"/>
+        <s:set var="age0" value="#parameters.agep[0]"/>
+        <s:set var="age" value="#parameters.age"/>
+
+        age[0]=<s:property value="#age[0]"/>
+        <br/>
+
+
+
+        <s:if test="#age0 < 0 ">wrong  age </s:if>
+        <s:elseif test="#age0 < 10">too young</s:elseif>
+        <s:else>yeah</s:else>
+        <br/>
+
+        <s:if test="#parameters.aaa == mull">null</s:if>
+    </li>
+    <li>
+        遍历集合:<br/>
+        <s:iterator value="{1,2,3}">
+            <s:property/> |
+        </s:iterator>
+
+    </li>
+    <li>
+        自定义变量:<br/>
+        <s:iterator value="{'aaa', 'bbb', 'ccc'}" var="x">
+            <s:property value="#x.toUpperCase()"/> |
+        </s:iterator>
+    </li>
+    <li>
+        使用status:<br/>
+        <s:iterator value="{'aaa', 'bbb', 'ccc'}" status="status">
+            <s:property/> |
+            遍历过的元素总数:<s:property value="#status.count"/> |
+            遍历过的元素索引:<s:property value="#status.index"/> |
+            当前是偶数？:<s:property value="#status.even"/> |
+            当前是奇数？:<s:property value="#status.odd"/> |
+            是第一个元素吗？:<s:property value="#status.first"/> |
+            是最后一个元素吗？:<s:property value="#status.last"/> | <br/>
+        </s:iterator>
+    </li>
+
+    <li>
+        <s:iterator value="#{1:'a', 2:'b', 3:'c'}" var="x">
+            <s:property value="#x.key"/> | <s:property value="#x.value"/> <br/>
+
+        </s:iterator>
+    </li>
+
+
     <s:debug/>
 
 
