@@ -36,15 +36,26 @@
     <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
 
     <package name="default" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor name="my" class="interceptor.MyInterceptor"/>
+        </interceptors>
+
         <default-action-ref name="index"></default-action-ref>
+
+
         <action name="index">
             <result>/default.jsp </result>
         </action>
+
+
         <action name="hello">
             <result>
                /Hello.jsp
             </result>
+            <interceptor-ref name="my"/>
+            <interceptor-ref name="defaultStack"/>
         </action>
+
 
     </package>
 
