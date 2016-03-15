@@ -61,9 +61,13 @@
 <hr/>
 <a href="/tags/tags.action?username=u&password=p">tags</a><br/>
 <a href="/tags/tags.action?username=u&password=p&age=8&age=15">if elseif else</a><br/>
-
-
-
+<a href="/hello">interceptor</a><br/>
+<a href="/conversion/test?date=10/2/2010%2012:00:00">conversion data</a><br/>
+<a href="/conversion/test?interests=math&interests=english" >conversion set/list/array</a><br/>
+<a href="/conversion/test?users['a']=usera&users['b']=userb">conversion map</a><br/>
+<a href="/conversion/test?p=2,3">conversion Point</a><br/>
+<a href="/conversion/test?ps=2,3&ps=3,6">conversion points(list)</a><br/>
+<a href="/conversion/test?points['a']=1,2&points['b']=2,3">conversion points(map)</a><br/>
 
 
 </body>

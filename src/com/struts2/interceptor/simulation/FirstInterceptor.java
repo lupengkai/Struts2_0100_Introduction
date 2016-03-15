@@ -1,4 +1,4 @@
-package interceptor.simulation;
+package com.struts2.interceptor.simulation;
 
 /**
  * Created by tage on 3/15/16.

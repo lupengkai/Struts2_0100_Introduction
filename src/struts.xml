@@ -37,7 +37,7 @@
 
     <package name="default" namespace="/" extends="struts-default">
         <interceptors>
-            <interceptor name="my" class="interceptor.MyInterceptor"/>
+            <interceptor name="my" class="com.struts2.interceptor.MyInterceptor"/>
         </interceptors>
 
         <default-action-ref name="index"></default-action-ref>
@@ -146,6 +146,12 @@
         </action>
         <action name="r4">
             <result type="redirectAction">r2</result>
+        </action>
+    </package>
+
+    <package name="conversion" extends="struts-default" namespace="/conversion">
+        <action name="test" class="com.struts2.conversion.TestAction">
+            <result>/test.jsp</result>
         </action>
     </package>
 

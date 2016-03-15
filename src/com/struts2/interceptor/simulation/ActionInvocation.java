@@ -1,4 +1,4 @@
-package interceptor.simulation;
+package com.struts2.interceptor.simulation;
 
 import java.util.ArrayList;
 import java.util.List;
