@@ -22,7 +22,7 @@ public class OgnlAction extends ActionSupport {
         return users;
     }
 
-    public void setUsers(List<User> users) {
+    public void setUsers(List< User> users) {
         this.users = users;
     }
 
